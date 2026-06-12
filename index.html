@@ -3,78 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sacramento Region Security Guard Patrol Directory</title>
+    <title>StormHammer Security | $1 Dollar Sacramento Security Guard & Patrol Service</title>
+    <meta name="description" content="StormHammer Regional Command: $1 Dollar physical security patrol and licensed guard deployment infrastructure across Sacramento, Placer, and Yolo Counties.">
+    <meta name="google-site-verification" content="pJRsul7Zn6s6qfp6WJeJcdtu76R6j0Gen7-YUd5STpk" />
+    
     <style>
+        :root {
+            --bg-dark: #090d16;
+            --card-bg: #111827;
+            --border-color: #1f2937;
+            --text-light: #f9fafb;
+            --text-muted: #9ca3af;
+            --brand-gold: #f59e0b;
+            --brand-blue: #3b82f6;
+            --brand-red: #ef4444;
+        }
+
         body {
             margin: 0;
+            padding: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #0f172a; /* Sleek Dark Theme */
-            color: #f8fafc;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
         }
-        .card {
-            max-width: 500px;
-            width: 100%;
-            padding: 40px 20px;
+
+        header {
+            background: linear-gradient(180deg, rgba(15,23,42,1) 0%, rgba(9,13,22,1) 100%);
+            border-bottom: 1px solid var(--border-color);
+            padding: 60px 20px;
             text-align: center;
-            background: #1e293b;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-            margin: 20px;
-            border: 1px solid #334155;
         }
-        h1 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-            color: #3b82f6;
-        }
-        p {
-            color: #94a3b8;
-            font-size: 1rem;
-            margin-bottom: 30px;
-            line-height: 1.5;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #2563eb;
-            color: #ffffff;
-            padding: 15px 30px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background 0.2s;
-            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
-        }
-        .btn:hover {
-            background-color: #1d4ed8;
-        }
-        .footer {
-            margin-top: 40px;
-            font-size: 0.8rem;
-            color: #64748b;
+
+        .badge {
+            background-color: rgba(239, 68, 68, 0.15);
+            color: var(--brand-red);
+            border: 1px solid var(--brand-red);
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.05em;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 15px 0;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            color: var(--text-light);
+        }
+
+        h1 span {
+            color: var(--brand-gold);
+            display: block;
+            font-size: 3rem;
+            margin-top: 5px;
+        }
+
+        .lead-text {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 35px auto;
+        }
+
+        .cta-box {
+            background: #1e1b4b;
+            border: 2px solid var(--brand-blue);
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.1);
+        }
+
+        .cta-box p {
+            margin: 0 0 20px 0;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .btn {
+            display: block;
+            background-color: var(--brand-blue);
+            color: #ffffff;
+            padding: 18px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.2s;
+            box-shadow: 0 4px 14px rgba(59, 130, 246, 0.4);
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #2563eb;
+            transform: translateY(-1px);
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .capabilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        .cap-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 25px;
+        }
+
+        .cap-card h3 {
+            color: var(--brand-blue);
+            margin-top: 0;
+            font-size: 1.25rem;
+        }
+
+        .seo-matrix-section {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 40px;
+            margin-top: 40px;
+        }
+
+        .seo-matrix-section h2 {
+            font-size: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+            color: var(--brand-gold);
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 25px;
+        }
+
+        .tag {
+            background-color: rgba(31, 41, 55, 0.6);
+            border: 1px solid #374151;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-family: monospace;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid var(--border-color);
+            color: #4b5563;
+            font-size: 0.85rem;
         }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <div>🛡️</div>
-        <h1>Sacramento Security Guard Dispatch</h1>
-        <p>Access competitive security guard patrol deployment and rate estimators for Sacramento, Placer, and Yolo Counties.</p>
-        
-        <a href="https://dollar-sacramento-security-guard-patrolsacramentoplaceryolo.onhercules.app/" class="btn">
-            Go to Security Rate Calculator →
-        </a>
+    <header>
+        <div class="badge">StormHammer Command Activation Portal</div>
+        <h1>
+            StormHammer Regional Tactics
+            <span>$1 Dollar Security Guard & Patrol Service</span>
+        </h1>
+        <p class="lead-text">
+            High-integrity, physical asset defense asset mapping. Deploying programmatic rate matching and industrial-grade property mitigation lines across the Greater Sacramento Intertie.
+        </p>
 
-        <div class="footer">
-            StormHammer Regional Security Network
+        <div class="cta-box">
+            <p>Ready to deploy coverage or calculate local contract configurations?</p>
+            <a href="https://dollar-sacramento-security-guard-patrolsacramentoplaceryolo.onhercules.app/" class="btn">
+                📊 Open Live $1 Rate Matrix & Patrol Calculator →
+            </a>
         </div>
-    </div>
+    </header>
+
+    <main>
+        <h2 style="text-align:center; margin-bottom:40px; font-size:2rem;">Tactical System Capabilities</h2>
+        
+        <div class="capabilities-grid">
+            <div class="cap-card">
+                <h3>01 / Fleet Patrol Logistics</h3>
+                <p>Localized vehicular enforcement line scanning across commercial facilities, retail infrastructure corridors, and vulnerable logistics perimeters.</p>
+            </div>
+            <div class="cap-card">
+                <h3>02 / Property Audit Vectors</h3>
+                <p>Detailed physical observation logging, threat vector mapping, and structural access compliance enforcement to eliminate asset vulnerabilities.</p>
+            </div>
+            <div class="cap-card">
+                <h3>03 / Rapid Logistics Routing</h3>
+                <p>Deploying dedicated field assets managed via automated operational logic to ensure structural perimeter integrity 24/7/365.</p>
+            </div>
+        </div>
+
+        <div class="seo-matrix-section">
+            <h2>Target Spatial Coverage Vectors (Regional Jurisdictions)</h2>
+            <p style="font-size:0.9rem; color:var(--text-muted);">StormHammer security guard deployments and physical asset monitoring are systematically calibrated across the following local footprints:</p>
+            
+            <h3 style="color:var(--text-light); font-size:1rem; margin-top:20px;">Incorporated Municipalities & Communities:</h3>
+            <div class="tag-cloud">
+                <span class="tag">Sacramento</span><span class="tag">Citrus Heights</span><span class="tag">Roseville</span>
+                <span class="tag">Rocklin</span><span class="tag">Lincoln</span><span class="tag">Davis</span>
+                <span class="tag">Woodland</span><span class="tag">West Sacramento</span><span class="tag">Elk Grove</span>
+                <span class="tag">Folsom</span><span class="tag">Rancho Cordova</span><span class="tag">Carmichael</span>
+                <span class="tag">Fair Oaks</span><span class="tag">Antelope</span><span class="tag">North Highlands</span>
+                <span class="tag">Rio Linda</span><span class="tag">Orangevale</span><span class="tag">Mather</span>
+                <span class="tag">Galt</span><span class="tag">Elverta</span><span class="tag">Loomis</span>
+                <span class="tag">Newcastle</span><span class="tag">Penryn</span><span class="tag">Granite Bay</span>
+                <span class="tag">Winters</span><span class="tag">Clarksburg</span><span class="tag">Esparto</span>
+                <span class="tag">Knights Landing</span><span class="tag">Madison</span><span class="tag">Dunnigan</span>
+            </div>
+
+            <h3 style="color:var(--text-light); font-size:1rem; margin-top:20px;">High-Frequency Logistics Corridors & Roadways:</h3>
+            <div class="tag-cloud">
+                <span class="tag">Interstate 80</span><span class="tag">Business 80 (Capital City Freeway)</span><span class="tag">Highway 50</span>
+                <span class="tag">Interstate 5</span><span class="tag">Highway 99</span><span class="tag">Highway 65</span>
+                <span class="tag">Greenback Lane</span><span class="tag">Sunrise Boulevard</span><span class="tag">Madison Avenue</span>
+                <span class="tag">Auburn Boulevard</span><span class="tag">Watt Avenue</span><span class="tag">Fulton Avenue</span>
+                <span class="tag">Fair Oaks Boulevard</span><span class="tag">San Juan Avenue</span><span class="tag">Hazel Avenue</span>
+                <span class="tag">Douglas Boulevard</span><span class="tag">Galleria Boulevard</span><span class="tag">Stanford Ranch Road</span>
+                <span class="tag">Pleasant Grove Boulevard</span><span class="tag">Main Street (Woodland)</span><span class="tag">Richards Boulevard</span>
+                <span class="tag">Stockton Boulevard</span><span class="tag">Florin Road</span><span class="tag">Elk Grove Boulevard</span>
+                <span class="tag">Truxel Road</span><span class="tag">Northgate Boulevard</span><span class="tag">Laguna Boulevard</span>
+            </div>
+
+            <h3 style="color:var(--text-light); font-size:1rem; margin-top:20px;">Target ZIP Code Direct Routing Identifiers:</h3>
+            <div class="tag-cloud">
+                <span class="tag">95608</span><span class="tag">95610</span><span class="tag">95611</span><span class="tag">95621</span>
+                <span class="tag">95624</span><span class="tag">95626</span><span class="tag">95628</span><span class="tag">95630</span>
+                <span class="tag">95632</span><span class="tag">95652</span><span class="tag">95655</span><span class="tag">95660</span>
+                <span class="tag">95662</span><span class="tag">95670</span><span class="tag">95673</span><span class="tag">95811</span>
+                <span class="tag">95814</span><span class="tag">95815</span><span class="tag">95816</span><span class="tag">95817</span>
+                <span class="tag">95818</span><span class="tag">95819</span><span class="tag">95820</span><span class="tag">95821</span>
+                <span class="tag">95822</span><span class="tag">95823</span><span class="tag">95824</span><span class="tag">95825</span>
+                <span class="tag">95826</span><span class="tag">95827</span><span class="tag">95828</span><span class="tag">95829</span>
+                <span class="tag">95831</span><span class="tag">95833</span><span class="tag">95834</span><span class="tag">95835</span>
+                <span class="tag">95838</span><span class="tag">95841</span><span class="tag">95842</span><span class="tag">95843</span>
+                <span class="tag">95864</span><span class="tag">95648</span><span class="tag">95650</span><span class="tag">95658</span>
+                <span class="tag">95661</span><span class="tag">95663</span><span class="tag">95677</span><span class="tag">95678</span>
+                <span class="tag">95681</span><span class="tag">95746</span><span class="tag">95747</span><span class="tag">95765</span>
+                <span class="tag">95605</span><span class="tag">95612</span><span class="tag">95616</span><span class="tag">95618</span>
+                <span class="tag">95627</span><span class="tag">95645</span><span class="tag">95653</span><span class="tag">95691</span>
+                <span class="tag">95694</span><span class="tag">95695</span><span class="tag">95776</span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        StormHammer Security Regional Network Node &bull; Programmatic Data Pipeline Operational Line
+    </footer>
 
 </body>
 </html>
+
